@@ -1,0 +1,187 @@
+/*
+Esto es un comentario
+*/
+
+/*
+selector{
+    propiedad:valor;
+
+}
+*/
+/*
+h1,h2{
+    color: rgb(30,30,30);
+}
+
+Palabra suelta - etiqueta
+almohadilla - id
+punto - clase
+*/
+
+/*
+header{
+    border: 1px solid black;
+    width: 800px;
+    margin: auto;
+}
+main{
+    border: 1px solid black;
+    width: 800px;
+    margin: auto;
+}
+footer{
+    border: 1px solid black;
+    width: 800px;
+    margin: auto;
+}
+*/
+
+/*////// INICIO DE ESTILOS GENERALES///////*/
+p{
+    color: rgb(30,30,30);
+}
+h1{
+    color:black;
+    margin:0px;
+    padding:0px;
+}
+h2{
+    color:rgb(23, 24, 27);
+    margin:0px;
+    padding:0px;
+}
+h3,h4,h5,h6,p,ul,li{
+    color:rgb(30,30,30);
+    margin:0px;
+    padding:0px;
+}
+header,main,footer{
+    /*border: 1px solid black;*/
+    width: 800px;
+    margin: auto;
+    background: rgb(260,260,260);
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding: 30px;
+}
+body{
+    background: rgb(200,200,200);
+    font-family: sans-serif;
+}
+
+/*////// FIN DE ESTILOS GENERALES///////*/
+#imagenlog{
+    float: left;
+    margin-right: 40px;
+
+}
+
+/*////// Aqui trabajare con el menu///////*/
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 13.5px;
+}
+nav ul li{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 5px;
+    margin: 1px;
+    list-style-type: none;
+    float: left;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    width:100px ;
+    font-size: 10px;
+    text-align: center;
+    transition: all 1s;
+}
+/*para que el menu este libre y nada a su costado tiene que agregarse */
+/*en archivo html debajao de </nav> */
+/* <div class="clearfix"></div> */
+.clearfix{
+    clear: both;
+}
+
+/*estilizar el menu*/
+
+nav ul li:first-child{
+    border-radius: 15px 0px 0px 15px;
+}
+nav ul li:last-child{
+    border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background: white;
+    color:gray;
+}
+
+/*////// fein Aqui trabajare con el menu///////*/
+
+/*////// Inicio Aqui trabajare con carrusel///////*/
+#carousel #contenedorcarrusel .diapositiva img{
+    width:100%;
+}
+
+#carousel #contenedorcarrusel .diapositiva{
+    width:800px;
+    height:800px;
+    float:left;
+}
+#contenedorcarrusel{
+width: 800px;
+height: 800px;
+overflow: hidden;
+}
+
+#mascara{
+    width: 4200px;
+    height: 800px;
+    animation: mueve 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes mueve{
+    0%{left: 0px;}
+    20%{left: 0px;}
+    25%{left: -800px;}
+    45%{left: -800px;}
+    50%{left: -1600px;}
+    70%{left: -1600px;}
+    75%{left: -2400px;}
+    95%{left: -2400px;}
+    100%{left: -3200px;}
+}
+
+/*////// Fin trabajare con carrusel///////*/
+
+/*////// bLOC EN LA PAGINA PRINCIPAL///////*/
+#blog article{
+    width:25%;
+    float:left;
+}
+#blog article img{
+    width: 100%;
+}
+#blog article .contienearticulo{
+    padding: 5px;
+}
+/*////// bLOC EN LA PAGINA PRINCIPAL///////*/
+
+/*////// destacados EN LA PAGINA PRINCIPAL///////*/
+#higlights article{
+    width:50%;
+    float:left;
+}
+#higlights article img{
+    width:100%;
+}
+#higlights article .contienearticulo{
+    padding: 5px;
+}
+/*////// destacados EN LA PAGINA PRINCIPAL///////*/
+
+/*Tabla*/
